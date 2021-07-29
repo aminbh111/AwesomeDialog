@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.awesome_dilaog.*
+import android.content.Context
 
 
 class AwesomeDialog {
@@ -27,7 +28,7 @@ class AwesomeDialog {
          * core method For Alert Dialog
          * */
         fun build(
-            context: Activity
+            context: Context
         ): AlertDialog {
             layoutInflater = LayoutInflater.from(context)
             val alertDialog =
